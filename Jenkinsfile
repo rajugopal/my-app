@@ -23,8 +23,8 @@ node {
 	   // Build using maven
 	   
 	   sh "${mvn} clean package deploy"
-   }
-   /mc
+   
+  
    stage('deploy-dev'){
        def tomcatDevIp = '172.31.28.172'
 	   def tomcatHome = '/opt/tomcat8/'
